@@ -48,7 +48,7 @@ function getMaxim(){
   /*格言と著者を返信用文章にフォーマットして返す。
   著者はWebサイトのDOMの都合上、リストで取得し、要素の２番目を返す。*/
   let retval = maxim + '\nBy ' + author[1]; 
-  return retval.replace('<br/>','');
+  return retval.replace('<br />','\n');
 }
 
 function getMaximTest(){
